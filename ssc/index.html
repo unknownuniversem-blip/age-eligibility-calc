@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Comprehensive Search Engine & Social Graph Meta Tags -->
+  <title>SSC CGL / CHSL Age Eligibility Calculator (OBC, SC, ST Relaxation)</title>
+  <meta name="description" content="Calculate your exact age for SSC CGL (18-32 years) and CHSL/MTS (18-27 years) as per the official cutoff date with category-based age relaxation rules.">
+  <meta name="keywords" content="ssc cgl age eligibility calculator, ssc age cutoff calculator obc sc st, ssc age calculator online free">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://unknownuniversem-blip.github.io/age-eligibility-calc/ssc/">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://unknownuniversem-blip.github.io/age-eligibility-calc/ssc/">
+  <meta property="og:title" content="SSC CGL / CHSL Age Eligibility Calculator (OBC, SC, ST Relaxation)">
+  <meta property="og:description" content="Calculate your exact age for SSC CGL (18-32 years) and CHSL/MTS (18-27 years) as per the official cutoff date with category-based age relaxation rules.">
+  <meta property="og:site_name" content="QuickTools India">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://unknownuniversem-blip.github.io/age-eligibility-calc/">
+  <meta name="twitter:title" content="Sarkari Exam Age Eligibility Calculator (Category-wise Cutoff)">
+  <meta name="twitter:description" content="Check exact age cutoff eligibility for UPSC, SSC, IBPS, Defence, and Police exams as on crucial dates with automatic OBC/SC/ST/EWS age relaxation rules.">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Sarkari Exam Age Eligibility Calculator (Category-wise Cutoff)",
+    "url": "https://unknownuniversem-blip.github.io/age-eligibility-calc/",
+    "description": "Check exact age cutoff eligibility for UPSC, SSC, IBPS, Defence, and Police exams as on crucial dates with automatic OBC/SC/ST/EWS age relaxation rules.",
+    "applicationCategory": "Govt Forms & Utilities",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    }
+  }
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a' stroke='%2338bdf8' stroke-width='1.5'/%3E%3Cpath d='M16 6v10l7 4' stroke='%2310b981' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Ccircle cx='16' cy='16' r='10' stroke='%2338bdf8' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #151f32;
+      --card-inner: #0d1526;
+      --border: #223249;
+      --border-focus: #38bdf8;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #38bdf8;
+      --accent: #10b981;
+      --accent-hover: #059669;
+      --danger: #ef4444;
+      --radius: 12px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    input[type="number"] { -moz-appearance: textfield; }
+
+    html, body {
+      max-width: 100vw;
+      overflow-x: hidden;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.25rem 1rem 3.5rem 1rem;
+    }
+    header { text-align: center; margin-bottom: 1.75rem; position: relative; }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .lang-toggle-btn {
+      background: var(--card-inner);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .lang-toggle-btn:hover {
+      border-color: var(--primary);
+      background: rgba(56, 189, 248, 0.1);
+    }
+    .brand-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-name {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .brand-badge {
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 3.5vw, 2.1rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: clamp(0.85rem, 2vw, 0.95rem);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .grid-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 860px) {
+      .grid-layout {
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: start;
+      }
+      .sticky-pane {
+        position: sticky;
+        top: 1.5rem;
+      }
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.35rem;
+      margin-bottom: 1.25rem;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.35rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card-subtitle {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+    label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    input[type="date"], input[type="number"], select {
+      width: 100%;
+      padding: 10px 14px;
+      background: var(--card-inner);
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.15s ease;
+      margin-bottom: 1rem;
+    }
+    input:focus, select:focus {
+      border-color: var(--border-focus);
+    }
+    .input-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    @media (max-width: 480px) {
+      .input-row { grid-template-columns: 1fr; }
+    }
+    .preset-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 1.25rem;
+    }
+    .preset-chip {
+      background: var(--card-inner);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .preset-chip:hover {
+      border-color: var(--primary);
+      color: #fff;
+    }
+    .hero-age {
+      background: linear-gradient(145deg, rgba(56, 189, 248, 0.12), rgba(16, 185, 129, 0.05));
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: var(--radius);
+      padding: 1.4rem;
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+    .hero-age-val {
+      font-size: clamp(1.6rem, 4vw, 2.3rem);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+    .hero-age-sub {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 1.25rem;
+    }
+    .stat-card {
+      background: var(--card-inner);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+    }
+    .stat-card span {
+      display: block;
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .stat-card strong {
+      font-size: 1.05rem;
+      color: #fff;
+    }
+    .eligibility-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      margin-bottom: 1.25rem;
+    }
+    .eligibility-badge.eligible {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid var(--accent);
+      color: #34d399;
+    }
+    .eligibility-badge.not-eligible {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid var(--danger);
+      color: #f87171;
+    }
+    .btn-action {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-align: center;
+      background: var(--accent);
+      color: #052e16;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.15s ease;
+      margin-bottom: 8px;
+    }
+    .btn-action:hover { background: var(--accent-hover); }
+    .ecosystem-section {
+      margin-top: 2.5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+    }
+    .ecosystem-section h3 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 0.4rem;
+      text-align: center;
+    }
+    .ecosystem-section p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+    .eco-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .eco-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.15s ease;
+    }
+    .eco-card:hover { border-color: var(--primary); }
+    .eco-card strong {
+      display: block;
+      font-size: 0.88rem;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .eco-card span { font-size: 0.75rem; color: var(--muted); }
+    footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+  
+    /* --- COMPREHENSIVE MOBILE RESPONSIVENESS OVERRIDES --- */
+    html, body {
+      max-width: 100vw !important;
+      overflow-x: hidden !important;
+      -webkit-text-size-adjust: 100% !important;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box !important;
+    }
+    input, select, textarea, button {
+      font-size: 16px !important; /* Prevents auto-zoom on iOS inputs */
+      min-height: 42px !important; /* Optimal touch target */
+    }
+    #quicktools-global-bar div::-webkit-scrollbar {
+      display: none !important;
+    }
+    #quicktools-global-bar div {
+      -ms-overflow-style: none !important;
+      scrollbar-width: none !important;
+      -webkit-overflow-scrolling: touch !important;
+    }
+    .canvas-wrap, .qr-frame, .dropzone {
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    canvas {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+    .modal-card {
+      max-width: calc(100vw - 32px) !important;
+      margin: 16px !important;
+    }
+    @media (max-width: 640px) {
+      .container {
+        padding: 0.85rem 0.75rem 2.5rem 0.75rem !important;
+      }
+      .studio-grid, .converter-grid, .input-row, .modal-apps-grid {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+      }
+      header h1 {
+        font-size: 1.35rem !important;
+      }
+      .tabs-nav {
+        grid-template-columns: 1fr !important;
+      }
+      .brand-box {
+        justify-content: center !important;
+      }
+    }
+
+  </style>
+  <!-- PRIVACY-FIRST ZERO-COOKIE ANALYTICS -->
+  <script data-goatcounter="https://quicktools.goatcounter.com/count"
+        data-goatcounter-settings='{"allow_local": true}'
+        async src="//gc.zgo.at/count.js"></script>
+
+<style id="growth-mesh-styles">
+  .related-mesh-card {
+    margin: 32px auto 20px;
+    max-width: 900px;
+    background: #0b1329;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    padding: 16px 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .related-mesh-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.02em;
+  }
+  .related-mesh-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .related-mesh-link {
+    display: block;
+    padding: 10px 14px;
+    background: #131d35;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  .related-mesh-link:hover {
+    background: #1e293b;
+    border-color: #38bdf8;
+    color: #38bdf8;
+    transform: translateY(-2px);
+  }
+</style>
+
+</head>
+<body>
+
+    <div style="background:#091224; border:1px solid #0284c7; border-radius:10px; padding:12px 18px; margin:16px auto; max-width:850px; font-size:0.86rem; color:#e2e8f0; font-family:-apple-system, BlinkMacSystemFont, sans-serif;">
+      ⚡ <b>SSC Rules:</b> UR: 18-30/32 yrs | OBC: +3 yrs | SC/ST: +5 yrs | PwD: +10 yrs.
+    </div>
+    
+
+  <!-- GLOBAL NETWORK HEADER -->
+  <div id="quicktools-global-bar" style="background:#090d16; border-bottom:1px solid #1e293b; padding:10px 16px; display:flex; align-items:center; justify-content:space-between; font-family:system-ui, -apple-system, sans-serif; font-size:13px; z-index:99999; position:relative; width:100%; box-sizing:border-box;">
+    <div style="display:flex; align-items:center; gap:8px;">
+      <a href="https://unknownuniversem-blip.github.io/" style="color:#f8fafc; font-weight:700; text-decoration:none; display:flex; align-items:center; gap:6px;">
+        <span style="background:#38bdf8; color:#0b1120; font-size:10px; font-weight:900; padding:2px 6px; border-radius:4px;">HUB</span>
+        <span>QuickTools</span>
+      </a>
+    </div>
+    <div style="display:flex; align-items:center; gap:12px; overflow-x:auto;">
+      <a href="https://unknownuniversem-blip.github.io/hindi-typing-tutor/" style="color:#f59e0b; text-decoration:none; font-weight:700; white-space:nowrap;">⌨️ हिंदी टाइपिंग</a>
+      <span style="color:#334155;">|</span>
+      <a href="https://unknownuniversem-blip.github.io/signature-maker-studio/" style="color:#38bdf8; text-decoration:none; font-weight:600; white-space:nowrap;">✍️ Signature Studio</a>
+      <span style="color:#334155;">|</span>
+      <a href="https://unknownuniversem-blip.github.io/krutidev-unicode-converter/" style="color:#38bdf8; text-decoration:none; font-weight:600; white-space:nowrap;">🔤 फॉन्ट कनवर्टर</a>
+      <span style="color:#334155;">|</span>
+      <a href="https://unknownuniversem-blip.github.io/exam-resizer/" style="color:#94a3b8; text-decoration:none; font-weight:600; white-space:nowrap;">📷 Photo Resizer</a>
+      <span style="color:#334155;">|</span>
+      <a href="https://unknownuniversem-blip.github.io/passport-photo-grid/" style="color:#38bdf8; text-decoration:none; font-weight:600; white-space:nowrap;">🖼️ पासपोर्ट ग्रिड</a>
+      <span style="color:#334155;">|</span>
+      <a href="https://unknownuniversem-blip.github.io/pdf-smart-tools/" style="color:#ef4444; text-decoration:none; font-weight:600; white-space:nowrap;">📄 PDF Tools</a>
+      <span style="color:#334155;">|</span>
+      <a href="https://unknownuniversem-blip.github.io/upi-qr-standee/" style="color:#10b981; text-decoration:none; font-weight:600; white-space:nowrap;">💳 UPI Standee</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div class="brand-box">
+          <svg width="34" height="34" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+            <path d="M16 6v10l7 4" stroke="#10b981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="16" cy="16" r="10" stroke="#38bdf8" stroke-width="2" fill="none"/>
+          </svg>
+          <span class="brand-name">Age<span style="color:#38bdf8;">Eligible</span></span>
+          <span class="brand-badge" id="lblCutoffBadge">Cut-off Accurate</span>
+        </div>
+        <button type="button" class="lang-toggle-btn" onclick="toggleLanguage()">
+          🌐 <span id="btnLangText">हिंदी में बदलें (Hindi)</span>
+        </button>
+      </div>
+
+      <h1 id="txtMainTitle">Government & Bank Exam Age Eligibility Calculator</h1>
+      <p id="txtMainDesc">Calculate your exact age in years, months, and days as of the notification cut-off date. Instant eligibility check for Bank PO, Clerk, UPSC, SSC, and State PSC with category relaxation.</p>
+    </header>
+
+    <div class="grid-layout">
+      <!-- INPUTS -->
+      <div>
+        <div class="card">
+          <div class="card-title" id="txtSec1Title">1. Date & Exam Parameters</div>
+          <div class="card-subtitle" id="txtSec1Subtitle">Enter Date of Birth and the exam notification's cut-off date</div>
+
+          <label id="lblDob">Your Date of Birth (DOB)</label>
+          <input type="date" id="dob" value="2000-01-15" onchange="calculateAge()">
+
+          <label id="lblCutoff">Cut-off Date (Age as on Date in Notification)</label>
+          <input type="date" id="cutoffDate" value="2026-08-01" onchange="calculateAge()">
+
+          <div style="font-size:0.75rem; color:var(--muted); margin-bottom:6px; font-weight:700;" id="lblQuickCutoff">Quick Cut-off Presets:</div>
+          <div class="preset-btns">
+            <span class="preset-chip" onclick="setCutoff('2026-08-01')">IBPS / UPSC (1 Aug 2026)</span>
+            <span class="preset-chip" onclick="setCutoff('2026-07-01')">UPPSC / BPSC (1 Jul 2026)</span>
+            <span class="preset-chip" onclick="setCutoff('2026-04-01')">SBI PO/Clerk (1 Apr 2026)</span>
+            <span class="preset-chip" onclick="setCutoff('2026-01-01')">SSC (1 Jan 2026)</span>
+            <span class="preset-chip" onclick="setCutoff('today')" id="chipToday">Today</span>
+          </div>
+
+          <div class="input-row">
+            <div>
+              <label id="lblCategory">Reservation Category</label>
+              <select id="selCategory" onchange="calculateAge()">
+                <option value="gen" selected>General / EWS (No Relaxation)</option>
+                <option value="obc">OBC (+3 Years Relaxation)</option>
+                <option value="sc_st">SC / ST (+5 Years Relaxation)</option>
+                <option value="pwd_gen">PwD General (+10 Years Relaxation)</option>
+                <option value="pwd_obc">PwD OBC (+13 Years Relaxation)</option>
+                <option value="pwd_sc_st">PwD SC/ST (+15 Years Relaxation)</option>
+              </select>
+            </div>
+            <div>
+              <label id="lblExamPreset">Target Exam Preset</label>
+              <select id="selExam" onchange="applyExamPreset()">
+                <optgroup label="Banking Exams" id="grpBank">
+                  <option value="bank_po">IBPS / SBI / RRB PO (20 - 30 Years)</option>
+                  <option value="bank_clerk">IBPS / SBI / RRB Clerk (20 - 28 Years)</option>
+                  <option value="rbi_grade_b">RBI Grade B Officer (21 - 30 Years)</option>
+                  <option value="bank_so">IBPS Specialist Officer SO (20 - 30 Years)</option>
+                </optgroup>
+                <optgroup label="Civil & SSC Exams" id="grpGovt">
+                  <option value="upsc">UPSC Civil Services IAS/IPS (21 - 32 Years)</option>
+                  <option value="ssc_cgl">SSC CGL (18 - 32 Years)</option>
+                  <option value="ssc_chsl">SSC CHSL (18 - 27 Years)</option>
+                  <option value="up_police">Police Constable (18 - 25 Years)</option>
+                  <option value="nda">NDA / CDS (16.5 - 19.5 Years)</option>
+                  <option value="custom">Custom Limits (Manual Entry)</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div>
+              <label id="lblMinAge">Min Age Limit (Years)</label>
+              <input type="number" id="minAge" value="20" min="14" max="60" oninput="calculateAge()">
+            </div>
+            <div>
+              <label id="lblMaxAge">General Max Limit (Years)</label>
+              <input type="number" id="maxAge" value="30" min="16" max="65" oninput="calculateAge()">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULTS -->
+      <div class="sticky-pane">
+        <div class="card">
+          <div class="hero-age">
+            <div class="hero-age-val" id="resExactAge">26 Years 6 Months 17 Days</div>
+            <div class="hero-age-sub" id="resCutoffDisplay">Your exact age as on 01/08/2026</div>
+          </div>
+
+          <div id="eligibilityCard" class="eligibility-badge eligible">
+            <span style="font-size:1.4rem;">✅</span>
+            <span id="eligibilityText">You are Eligible for this exam!</span>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span id="lblStatMaxAge">Effective Max Limit</span>
+              <strong id="resEffectiveMaxAge" style="color:var(--primary);">30 Years</strong>
+            </div>
+            <div class="stat-card">
+              <span id="lblStatDays">Total Days Lived</span>
+              <strong id="resTotalDays">9,695 Days</strong>
+            </div>
+            <div class="stat-card">
+              <span id="lblStatNextBday">Next Birthday</span>
+              <strong id="resNextBday">105 Days Left</strong>
+            </div>
+            <div class="stat-card">
+              <span id="lblStatDayBorn">Day of Birth</span>
+              <strong id="resDayOfWeek">Saturday</strong>
+            </div>
+          </div>
+
+          <button class="btn-action" onclick="shareWhatsApp()" id="btnShareWhatsApp">💬 Share Result on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ZERO STORAGE PLEDGE -->
+    <div style="display:flex; align-items:center; gap:10px; background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.25); border-radius:8px; padding:10px 14px; margin-top:1.5rem;">
+      <span style="font-size:1.2rem;">🔒</span>
+      <span style="font-size:0.78rem; color:var(--muted);" id="txtPrivacyPledge">100% Private & Client-Side: Your Date of Birth and age details are never uploaded or tracked on any server.</span>
+    </div>
+
+    <!-- ECOSYSTEM -->
+    <div class="ecosystem-section">
+      <h3 id="txtEcoTitle">More Free Client-Side Tools</h3>
+      <p id="txtEcoDesc">Discover fast, zero-tracking productivity tools that run directly in your browser.</p>
+      <div class="eco-grid">
+        <a href="https://unknownuniversem-blip.github.io/passport-photo-grid/" class="eco-card">
+          <strong id="card1T">📷 Passport Photo Grid Maker</strong>
+          <span id="card1D">Create printable 4x6 / A4 photo sheets with Name and DOP exam strip.</span>
+        </a>
+        <a href="https://unknownuniversem-blip.github.io/exam-resizer/" class="eco-card">
+          <strong id="card2T">📷 Govt Exam Photo Resizer</strong>
+          <span id="card2D">Resize photos and signatures to exact 20-50 KB limits for SSC, UPSC, and NEET.</span>
+        </a>
+        <a href="https://unknownuniversem-blip.github.io/gst-quick-calc/" class="eco-card">
+          <strong id="card3T">🧾 GST Calculator & Reverse Billing</strong>
+          <span id="card3D">Calculate base rates, CGST/SGST splits, and invoice amounts under GST 2.0 slabs.</span>
+        </a>
+        <a href="https://unknownuniversem-blip.github.io/loan-emi-calculator/" class="eco-card">
+          <strong id="card4T">💰 Loan EMI & Prepayment Reducer</strong>
+          <span id="card4D">Simulate monthly EMIs, 0% No Cost options, and interest savings from prepayments.</span>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div>QuickTools Network &copy; 2026. 100% Free Client-Side Utilities.</div>
+    </footer>
+  </div>
+
+  <script>
+    let currentLang = 'en'; // Default English
+
+    const examPresets = {
+      bank_po: { min: 20, max: 30 },
+      bank_clerk: { min: 20, max: 28 },
+      rbi_grade_b: { min: 21, max: 30 },
+      bank_so: { min: 20, max: 30 },
+      upsc: { min: 21, max: 32 },
+      ssc_cgl: { min: 18, max: 32 },
+      ssc_chsl: { min: 18, max: 27 },
+      up_police: { min: 18, max: 25 },
+      nda: { min: 16.5, max: 19.5 }
+    };
+
+    const relaxations = {
+      gen: 0,
+      obc: 3,
+      sc_st: 5,
+      pwd_gen: 10,
+      pwd_obc: 13,
+      pwd_sc_st: 15
+    };
+
+    const daysEn = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const daysHi = ['रविवार (Sunday)', 'सोमवार (Monday)', 'मंगलवार (Tuesday)', 'बुधवार (Wednesday)', 'गुरुवार (Thursday)', 'शुक्रवार (Friday)', 'शनिवार (Saturday)'];
+
+    const i18n = {
+      en: {
+        btnLang: 'हिंदी में बदलें (Hindi)',
+        mainTitle: 'Government & Bank Exam Age Eligibility Calculator',
+        mainDesc: 'Calculate your exact age in years, months, and days as of the notification cut-off date. Instant eligibility check for Bank PO, Clerk, UPSC, SSC, and State PSC with category relaxation.',
+        cutoffBadge: 'Cut-off Accurate',
+        sec1Title: '1. Date & Exam Parameters',
+        sec1Subtitle: 'Enter Date of Birth and the exam notification\'s cut-off date',
+        lblDob: 'Your Date of Birth (DOB)',
+        lblCutoff: 'Cut-off Date (Age as on Date in Notification)',
+        lblQuickCutoff: 'Quick Cut-off Presets:',
+        chipToday: 'Today',
+        lblCategory: 'Reservation Category',
+        lblExamPreset: 'Target Exam Preset',
+        lblMinAge: 'Min Age Limit (Years)',
+        lblMaxAge: 'General Max Limit (Years)',
+        lblStatMaxAge: 'Effective Max Limit',
+        lblStatDays: 'Total Days Lived',
+        lblStatNextBday: 'Next Birthday',
+        lblStatDayBorn: 'Day of Birth',
+        btnShareWhatsApp: '💬 Share Result on WhatsApp',
+        txtPrivacyPledge: '100% Private & Client-Side: Your Date of Birth and age details are never uploaded or tracked on any server.',
+        txtEcoTitle: 'More Free Client-Side Tools',
+        txtEcoDesc: 'Discover fast, zero-tracking productivity tools that run directly in your browser.',
+        eligibleText: 'You are Eligible for this exam! (Range: {min} - {max} Yrs)',
+        underAgeText: 'Under-Age: You are younger than the minimum required age ({min} Yrs).',
+        overAgeText: 'Over-Age: You have crossed the maximum permissible age ({max} Yrs).'
+      },
+      hi: {
+        btnLang: 'Switch to English',
+        mainTitle: 'सरकारी व बैंक परीक्षा आयु एवं पात्रता कैलकुलेटर',
+        mainDesc: 'नोटिफिकेशन की कट-ऑफ तारीख पर अपनी सही उम्र साल, महीने और दिन में निकालें। बैंक PO, क्लर्क, UPSC, SSC के लिए कट-ऑफ पात्रता व आरक्षण छूट जांचें।',
+        cutoffBadge: 'सटीक कट-ऑफ गणना',
+        sec1Title: '1. तारीख व परीक्षा का विवरण',
+        sec1Subtitle: 'जन्म तारीख और फॉर्म की कट-ऑफ तारीख दर्ज करें',
+        lblDob: 'आपकी जन्म तिथि (Date of Birth - DOB)',
+        lblCutoff: 'कट-ऑफ तारीख (Age as on Date - फॉर्म की तारीख)',
+        lblQuickCutoff: 'लोकप्रिय कट-ऑफ तारीखें:',
+        chipToday: 'आज की तारीख',
+        lblCategory: 'आरक्षण श्रेणी (Reservation Category)',
+        lblExamPreset: 'भर्ती परीक्षा का प्रकार (Target Exam)',
+        lblMinAge: 'न्यूनतम उम्र सीमा (वर्ष)',
+        lblMaxAge: 'सामान्य अधिकतम उम्र सीमा (वर्ष)',
+        lblStatMaxAge: 'लागू अधिकतम उम्र (छूट सहित)',
+        lblStatDays: 'कुल गुजरे हुए दिन',
+        lblStatNextBday: 'अगला जन्मदिन',
+        lblStatDayBorn: 'जन्म का वार (दिन)',
+        btnShareWhatsApp: '💬 WhatsApp पर हिसाब शेयर करें',
+        txtPrivacyPledge: '100% सुरक्षित (Zero Storage): आपकी जन्म तिथि या उम्र का कोई भी डेटा किसी सर्वर पर नहीं भेजा जाता।',
+        txtEcoTitle: 'QuickTools के अन्य उपयोगी टूल्स',
+        txtEcoDesc: 'बिना किसी विज्ञापन या सर्वर लोड के सीधे ब्राउज़र में चलने वाले तेज टूल्स।',
+        eligibleText: 'आप इस परीक्षा के लिए पात्र (Eligible) हैं! (सीमा: {min} - {max} वर्ष)',
+        underAgeText: 'Under-Age: आप अभी न्यूनतम आवश्यक उम्र ({min} वर्ष) से कम हैं।',
+        overAgeText: 'Over-Age: आप अधिकतम मान्य उम्र सीमा ({max} वर्ष) पार कर चुके हैं।'
+      }
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+      applyExamPreset();
+    });
+
+    function toggleLanguage() {
+      currentLang = (currentLang === 'en') ? 'hi' : 'en';
+      const t = i18n[currentLang];
+
+      document.getElementById('btnLangText').innerText = t.btnLang;
+      document.getElementById('txtMainTitle').innerText = t.mainTitle;
+      document.getElementById('txtMainDesc').innerText = t.mainDesc;
+      document.getElementById('lblCutoffBadge').innerText = t.cutoffBadge;
+      document.getElementById('txtSec1Title').innerText = t.sec1Title;
+      document.getElementById('txtSec1Subtitle').innerText = t.sec1Subtitle;
+      document.getElementById('lblDob').innerText = t.lblDob;
+      document.getElementById('lblCutoff').innerText = t.lblCutoff;
+      document.getElementById('lblQuickCutoff').innerText = t.lblQuickCutoff;
+      document.getElementById('chipToday').innerText = t.chipToday;
+      document.getElementById('lblCategory').innerText = t.lblCategory;
+      document.getElementById('lblExamPreset').innerText = t.lblExamPreset;
+      document.getElementById('lblMinAge').innerText = t.lblMinAge;
+      document.getElementById('lblMaxAge').innerText = t.lblMaxAge;
+      document.getElementById('lblStatMaxAge').innerText = t.lblStatMaxAge;
+      document.getElementById('lblStatDays').innerText = t.lblStatDays;
+      document.getElementById('lblStatNextBday').innerText = t.lblStatNextBday;
+      document.getElementById('lblStatDayBorn').innerText = t.lblStatDayBorn;
+      document.getElementById('btnShareWhatsApp').innerText = t.btnShareWhatsApp;
+      document.getElementById('txtPrivacyPledge').innerText = t.txtPrivacyPledge;
+      document.getElementById('txtEcoTitle').innerText = t.txtEcoTitle;
+      document.getElementById('txtEcoDesc').innerText = t.txtEcoDesc;
+
+      calculateAge();
+    }
+
+    function setCutoff(val) {
+      if (val === 'today') {
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('cutoffDate').value = today;
+      } else {
+        document.getElementById('cutoffDate').value = val;
+      }
+      calculateAge();
+    }
+
+    function applyExamPreset() {
+      const examKey = document.getElementById('selExam').value;
+      if (examKey !== 'custom' && examPresets[examKey]) {
+        document.getElementById('minAge').value = examPresets[examKey].min;
+        document.getElementById('maxAge').value = examPresets[examKey].max;
+      }
+      calculateAge();
+    }
+
+    function calculateAge() {
+      const dobVal = document.getElementById('dob').value;
+      const cutoffVal = document.getElementById('cutoffDate').value;
+
+      if (!dobVal || !cutoffVal) return;
+
+      const dob = new Date(dobVal);
+      const cutoff = new Date(cutoffVal);
+
+      if (cutoff < dob) {
+        document.getElementById('resExactAge').innerText = currentLang === 'en' ? 'Cut-off date is before Birth date!' : 'कट-ऑफ तारीख जन्म से पहले की है!';
+        return;
+      }
+
+      let y = cutoff.getFullYear() - dob.getFullYear();
+      let m = cutoff.getMonth() - dob.getMonth();
+      let d = cutoff.getDate() - dob.getDate();
+
+      if (d < 0) {
+        m--;
+        const prevMonthDays = new Date(cutoff.getFullYear(), cutoff.getMonth(), 0).getDate();
+        d += prevMonthDays;
+      }
+
+      if (m < 0) {
+        y--;
+        m += 12;
+      }
+
+      if (currentLang === 'en') {
+        document.getElementById('resExactAge').innerText = `${y} Years ${m} Months ${d} Days`;
+      } else {
+        document.getElementById('resExactAge').innerText = `${y} वर्ष ${m} माह ${d} दिन`;
+      }
+
+      const [cy, cm, cd] = cutoffVal.split('-');
+      if (currentLang === 'en') {
+        document.getElementById('resCutoffDisplay').innerText = `Your exact age as on ${cd}/${cm}/${cy}`;
+      } else {
+        document.getElementById('resCutoffDisplay').innerText = `कट-ऑफ तारीख ${cd}/${cm}/${cy} पर आपकी सही उम्र`;
+      }
+
+      const diffTime = Math.abs(cutoff - dob);
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      document.getElementById('resTotalDays').innerText = diffDays.toLocaleString('en-IN') + (currentLang === 'en' ? ' Days' : ' दिन');
+
+      document.getElementById('resDayOfWeek').innerText = (currentLang === 'en') ? daysEn[dob.getDay()] : daysHi[dob.getDay()];
+
+      const now = new Date();
+      let nextBday = new Date(now.getFullYear(), dob.getMonth(), dob.getDate());
+      if (nextBday < now) {
+        nextBday.setFullYear(now.getFullYear() + 1);
+      }
+      const daysToNext = Math.ceil((nextBday - now) / (1000 * 60 * 60 * 24));
+      document.getElementById('resNextBday').innerText = `${daysToNext} ` + (currentLang === 'en' ? 'Days Left' : 'दिन बाकी');
+
+      const category = document.getElementById('selCategory').value;
+      const relax = relaxations[category] || 0;
+      const baseMin = parseFloat(document.getElementById('minAge').value) || 0;
+      const baseMax = parseFloat(document.getElementById('maxAge').value) || 0;
+      const effectiveMax = baseMax + relax;
+
+      if (currentLang === 'en') {
+        document.getElementById('resEffectiveMaxAge').innerText = `${effectiveMax} Yrs (${baseMax} + ${relax} relax)`;
+      } else {
+        document.getElementById('resEffectiveMaxAge').innerText = `${effectiveMax} वर्ष (${baseMax} + ${relax} छूट)`;
+      }
+
+      const userAgeDecimal = y + (m / 12) + (d / 365);
+      const badge = document.getElementById('eligibilityCard');
+      const t = i18n[currentLang];
+
+      if (userAgeDecimal >= baseMin && userAgeDecimal <= effectiveMax) {
+        badge.className = 'eligibility-badge eligible';
+        badge.innerHTML = `<span style="font-size:1.4rem;">✅</span><span>${t.eligibleText.replace('{min}', baseMin).replace('{max}', effectiveMax)}</span>`;
+      } else if (userAgeDecimal < baseMin) {
+        badge.className = 'eligibility-badge not-eligible';
+        badge.innerHTML = `<span style="font-size:1.4rem;">❌</span><span>${t.underAgeText.replace('{min}', baseMin)}</span>`;
+      } else {
+        badge.className = 'eligibility-badge not-eligible';
+        badge.innerHTML = `<span style="font-size:1.4rem;">❌</span><span>${t.overAgeText.replace('{max}', effectiveMax)}</span>`;
+      }
+    }
+
+    function shareWhatsApp() {
+      const age = document.getElementById('resExactAge').innerText;
+      const cutoff = document.getElementById('resCutoffDisplay').innerText;
+      const status = document.getElementById('eligibilityCard').innerText.replace(/\s+/g, ' ');
+
+      const text = encodeURIComponent(`⏱ Exam Age & Eligibility Result:\n${cutoff}\nCalculated Age: ${age}\nStatus: ${status}\n\nCheck online: ` + window.location.href);
+      window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+    }
+  </script>
+<script src="https://unknownuniversem-blip.github.io/network.js" defer></script>
+<!-- Viral Social Share Bar -->
+<div id="viral-share-bar" style="position:fixed; bottom:16px; left:50%; transform:translateX(-50%); z-index:99999; display:flex; gap:10px; background:#0f172ae6; backdrop-filter:blur(8px); border:1px solid #38bdf8; padding:8px 16px; border-radius:50px; box-shadow:0 8px 30px rgba(0,0,0,0.6); align-items:center;">
+  <span style="color:#f8fafc; font-size:0.82rem; font-weight:700; white-space:nowrap;">Share with Aspirants:</span>
+  <a href="https://api.whatsapp.com/send?text=%F0%9F%8E%82%20Age%20Eligibility%20Calculator%3A%20Check%20exact%20age%20cutoff%20for%20Sarkari%20Bharti%2C%20Police%2C%20SSC%20%26%20Banking%3A%20https%3A//unknownuniversem-blip.github.io/age-eligibility-calc/" target="_blank" style="background:#22c55e; color:#fff; text-decoration:none; padding:6px 14px; border-radius:30px; font-size:0.78rem; font-weight:800; display:flex; align-items:center; gap:5px;">
+    💬 WhatsApp
+  </a>
+  <a href="https://t.me/share/url?url=https%3A//unknownuniversem-blip.github.io/age-eligibility-calc/&text=%F0%9F%8E%82%20Age%20Eligibility%20Calculator%3A%20Check%20exact%20age%20cutoff%20for%20Sarkari%20Bharti%2C%20Police%2C%20SSC%20%26%20Banking%3A%20https%3A//unknownuniversem-blip.github.io/age-eligibility-calc/" target="_blank" style="background:#0284c7; color:#fff; text-decoration:none; padding:6px 14px; border-radius:30px; font-size:0.78rem; font-weight:800; display:flex; align-items:center; gap:5px;">
+    ✈️ Telegram
+  </a>
+</div>
+
+
+<!-- Dynamic Internal Cross-Link Mesh -->
+<div class="related-mesh-card">
+  <div class="related-mesh-title">⚡ Recommended Essential Student & Cyber Tools</div>
+  <div class="related-mesh-grid">
+    <a href="https://unknownuniversem-blip.github.io/exam-resizer/" class="related-mesh-link" target="_blank">📸 Exam Photo Resizer</a><a href="https://unknownuniversem-blip.github.io/sarkari-alert-ai/" class="related-mesh-link" target="_blank">🔔 Sarkari Alert AI</a><a href="https://unknownuniversem-blip.github.io/signature-maker-studio/" class="related-mesh-link" target="_blank">✍️ Signature Maker Studio</a><a href="https://unknownuniversem-blip.github.io/math/" class="related-mesh-link" target="_blank">⚡ Speed Math Workout</a>
+  </div>
+</div>
+
+</body>
+</html>
